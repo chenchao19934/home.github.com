@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>送菜蛙体验</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="./css/reset.css">
+	<style>
+		body {
+			height: 100vh;
+			text-align: center;
+			padding-top: 30px;
+		}
+		iframe {
+			width: 100%;
+			height: 100%;
+		}
+		.close-btn {
+			position: fixed;
+			top: 20px;
+			left: 20px;
+			width: 45px;
+			height: 45px;
+			border-radius: 50%;
+			background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjQ2QTRCRkRBMkJEQzExRTc4Qjg2RTAyRjk1MkI2RERDIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjQ2QTRCRkRCMkJEQzExRTc4Qjg2RTAyRjk1MkI2RERDIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NDZBNEJGRDgyQkRDMTFFNzhCODZFMDJGOTUyQjZEREMiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NDZBNEJGRDkyQkRDMTFFNzhCODZFMDJGOTUyQjZEREMiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7hDdR2AAAIa0lEQVR42uRd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');
+			background-size: 100% 100%;
+			z-index: 1;
+		}
+		.reset-frame {
+			width: 450px;
+        	height: 700px;
+		}
+		.hide {
+			opacity: 0
+		}
+	</style>
+</head>
+<body>
+	<div class="close-btn" onclick="close()"></div>
+	<iframe src="https://scw.new.songcaiwa.cn/public/wScw/#/home" frameborder="0"></iframe>
+</body>
+	<script>
+		var closeBtn = document.querySelectorAll('.close-btn')[0],
+			iframe = document.querySelectorAll('iframe')[0];
+			
+		function close() {
+			window.location.href = './index.html';
+		}
+		(function() {
+			if (/(iPhone|iPad|iPod|iOS|Android)/i.test(navigator.userAgent)) {
+				
+			}else {
+				iframe.className = 'reset-frame';
+				closeBtn.className += ' hide';
+			}
+		})()
+	</script>
+</html>
