@@ -141,14 +141,12 @@ body {
     font-size: 2.35em;
     font-weight: 900;
     line-height: 1em;
-    font-family: -webkit-pictograph;
     text-align: center;
 }
 .header  p {
 	font-size: 1em;
     margin: 0.75em 0 0.25em 0;
     opacity: 0.75;
-    font-family: -webkit-pictograph;
     text-align: center;
 }
 
