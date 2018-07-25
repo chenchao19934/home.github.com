@@ -27,7 +27,7 @@ body {
 	line-height: 1.75em;
 }
 .wrapper {
-	position: fixed;
+	position: absolute;
 	top: 0;
 	bottom: 0;
 	left: 0;
@@ -39,6 +39,12 @@ body {
 @-ms-keyframes overlay { 0% { opacity: 0; } 100% { opacity: 1; } }
 @keyframes overlay { 0% { opacity: 0; } 100% { opacity: 1; } }
 .wrapper .wrapper-mask{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	opacity: 0;
 	-moz-animation: overlay 1.5s 1.5s forwards;
 	-webkit-animation: overlay 1.5s 1.5s forwards;
 	-o-animation: overlay 1.5s 1.5s forwards;
@@ -49,15 +55,9 @@ body {
 	background-position: top left, center center;
 	background-repeat: repeat, no-repeat;
 	background-size: auto, cover;
-	height: 100%;
-	left: 0;
-	opacity: 0;
-	position: fixed;
-	top: 0;
-	width: 100%;
 }
 .wrapper .wrapper-bg {
-	position: fixed;
+	position: absolute;
 	height: 100%;
 	left: 0;
 	opacity: 1;
@@ -96,9 +96,6 @@ body {
 }
 
 .main {
-	position: fixed;
-	width: 100%;
-	height: 100%;
 	text-align: center;
 	padding-top: 15%;
 }
@@ -120,7 +117,6 @@ body {
 	cursor: default;
     display: inline-block;
     opacity: 0;
-    position: relative;
 
     -moz-animation: header 1s 2.25s forwards;
 	-webkit-animation: header 1s 2.25s forwards;
