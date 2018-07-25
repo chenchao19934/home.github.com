@@ -94,7 +94,7 @@ body {
 
 .wrapper-bg {
 	background-size: 1500px auto;
-	width: 3500px;
+	width: 4500px;
 }
 
 .main {
@@ -145,15 +145,17 @@ body {
 	transform: translate3d(0,0,0);
 }
 .header h1 {
-    font-size: 3.35em;
+    font-size: 2.35em;
     font-weight: 900;
     letter-spacing: -0.035em;
     line-height: 1em;
+    font-family: -webkit-pictograph;
 }
 .header  p {
 	font-size: 1em;
     margin: 0.75em 0 0.25em 0;
     opacity: 0.75;
+    font-family: -webkit-pictograph;
 }
 
 .header nav {
