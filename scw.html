@@ -17,20 +17,20 @@
 			display: inline-block;
 			padding: 0 1px;
 		}
-		.contain::before,.contain::after {
+		.pseudo::before,.pseudo::after {
 			content: "";
 			position: absolute;
 			width: 100%;
 			height: 45px;
 			transform: translate3d(-50%,0,0);
 		}
-		.contain::before {
+		.pseudo::before {
 			top: -45px;
 			left: 50%;
 			background: url("./images/phone_top.jpg");
 	        background-size: 100% 100%;
 		}
-		.contain::after {
+		.pseudo::after {
 			bottom: -45px;
 			left: 50%;
 			background: url("./images/phone_bottom.jpg");
@@ -63,7 +63,7 @@
 </head>
 <body>
 	<div class="close-btn" onclick="close()"></div>
-	<div class="contain">
+	<div class="contain pseudo">
 		<iframe src="https://scw.new.songcaiwa.cn/public/wScw/#/home" frameborder="0"></iframe>
 	</div>
 </body>
@@ -84,6 +84,7 @@
 		 */
 		function resetpage() {
 			if (/(iPhone|iPad|iPod|iOS|Android)/i.test(navigator.userAgent)) {
+				contain.className = 'contain';
 				contain.style.position = 'static';
 				contain.style.width = '100%';
 				contain.style.height = '100%';
